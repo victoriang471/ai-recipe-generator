@@ -1,0 +1,148 @@
+[
+{
+	"uri": "//localhost:1313/0-introduction/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Build a Serverless Web Application using Generative AI Overview In this tutorial, you will learn how to use AWS Amplify to build a serverless web application powered by Generative AI using Amazon Bedrock and the Claude 3 Sonnet foundation model. Users can enter a list of ingredients, and the application will generate delicious recipes based on the input ingredients. The application includes an HTML-based user interface for ingredient submission and a backend web app to request AI-generated recipes.\nMain Content Host a static website Manage users Build a serverless backend Deploy the backend API Build the frontend Clean up resouces "
+},
+{
+	"uri": "//localhost:1313/",
+	"title": "Setting up an AWS account",
+	"tags": [],
+	"description": "",
+	"content": "Creating your first AWS account Overview In this first lab, you will be creating your new AWS account and use Multi-factor Authentication (MFA) to improve your account security. Next, you will create an Administrator Group and Admin User to manage access to resources in your account instead of using the root user. Finally, we will step through account authentication with AWS Support in the event you experience authentication problems.\nAWS Account An AWS account is the basic container for all the AWS resources you can create as an AWS customer. By default, each AWS account will have a root user. The root user has full access within your AWS account, and root user permissions cannot be limited. When you first create your AWS account, you will be assessing it as the root user.\nAs a best practice, do not use the AWS account root user for any task where it\u0026rsquo;s not required. Instead, create a new IAM user for each person that requires administrator access. Thereafter, the users in the administrators user group should set up the user groups, users, and so on, for the AWS account. All future interaction should be through the AWS account\u0026rsquo;s users and their own keys instead of the root user. However, to perform some account and service management tasks, you must log in using the root user credentials.\nMulti-Factor Authentication (MFA) MFA adds extra security because it requires users to provide unique authentication from an AWS supported MFA mechanism in addition to their regular sign-in credentials when they access AWS websites or services.\nIAM User Group An IAM user group is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. Any user in that user group automatically has the permissions that are assigned to the user group.\nIAM User An IAM user is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials. Please note that an IAM user with administrator permissions is not the same thing as the AWS account root user.\nAWS Support AWS Basic Support offers all AWS customers access to our Resource Center, Service Health Dashboard, Product FAQs, Discussion Forums, and Support for Health Checks – at no additional charge. Customers who desire a deeper level of support can subscribe to AWS Support at the Developer, Business, or Enterprise level.\nCustomers who choose AWS Support gain one-on-one, fast-response support from AWS engineers. The service helps customers use AWS\u0026rsquo;s products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.\nMain Content Creating a new AWS Account Setting up MFA for the AWS Account root user Creating an Administrator Accounts and Groups Getting support for Account Authentication "
+},
+{
+	"uri": "//localhost:1313/1-host-static-website/",
+	"title": "Host Static Website",
+	"tags": [],
+	"description": "",
+	"content": "In this step, you will connect the GitHub repository you just created to AWS Amplify. This will enable you to build and deploy your app on AWS.\nMain Content Main content 1.1 Create a new React Application\n1.2 Initialize a new Github Repository\n1.3 Install the Amplify Packages\n1.4 Deploy your App with AWS Amplify\n"
+},
+{
+	"uri": "//localhost:1313/1-host-static-website/1.1-create-new-react/",
+	"title": "Create a new React App",
+	"tags": [],
+	"description": "",
+	"content": "In a new terminal or command line window, run the following command to use Vite to create a React application\nnpm create vite@latest ai-recipe-generator -- --template react-ts -y cd ai-recipe-generator npm install npm run dev In the terminal window, select and open the Local link to view the Vite + React application. "
+},
+{
+	"uri": "//localhost:1313/1-host-static-website/1.2-initilize-github-rep/",
+	"title": "Initialize a Github Repository",
+	"tags": [],
+	"description": "",
+	"content": "In this step, you will create a GitHub repository and commit your code to the repository. You will need a GitHub account to complete this step, if you do not have an account, sign up here.\nIn the Start a new repository section, make the following selections: For Repository name, enter ai-recipe-generator, and choose the Public radio button. Then select, Create a new repository.\nOpen a new terminal window, navigate to your projects root folder (ai-recipe-generator), and run the following commands to initialize a git and push of the application to the new GitHub repo: Note: Replace the SSH GitHub URL in the command with your GitHub URL.\ngit init git add . git commit -m \u0026#34;first commit\u0026#34; git remote add origin git@github.com:\u0026lt;your-username\u0026gt;/ai-recipe-generator.git git branch -M main git push -u origin main "
+},
+{
+	"uri": "//localhost:1313/1-host-static-website/1.3-install-amplify/",
+	"title": "Install Amplify Package",
+	"tags": [],
+	"description": "",
+	"content": "Open a new terminal window, navigate to your app\u0026rsquo;s root folder (ai-recipe-generator), and run the following command:\nnpm create amplify@latest -y Running the previous command will scaffold a lightweight Amplify project in the app’s directory. In your terminal window, run the following command to push the changes to GitHub:\ngit add . git commit -m \u0026#39;installing amplify\u0026#39; git push origin main "
+},
+{
+	"uri": "//localhost:1313/1-host-static-website/1.4-deploy-amplify/",
+	"title": "Deploy your app on Amplify",
+	"tags": [],
+	"description": "",
+	"content": "In this step, you will connect the GitHub repository you just created to AWS Amplify. This will enable you to build and deploy your app on AWS.\nSign in to the AWS Management console in a new browser window, and open the AWS Amplify console at https://console.aws.amazon.com/amplify/apps. Choose Create new app. On the Start building with Amplify page, for Deploy your app, select GitHub, and select Next. When prompted, authenticate with GitHub. You will be automatically redirected back to the Amplify console. Choose the repository and main branch you created earlier. Then select Next. Leave the default build settings, and select Next. Review the inputs selected, and choose Save and deploy. AWS Amplify will now build your source code and deploy your app at https://...amplifyapp.com, and on every git push your deployment instance will update. It may take up to 5 minutes to deploy your app. Once the build completes, select the Visit deployed URL button to see your web app up and running live. You have deployed a React application to AWS by integrating with GitHub and using AWS Amplify. With AWS Amplify, you can continuously deploy your application in the Cloud and host it on a globally available CDN. "
+},
+{
+	"uri": "//localhost:1313/2-manage-users/",
+	"title": "Manage Users",
+	"tags": [],
+	"description": "",
+	"content": "Overview Now that you have a React web app, you will configure an authentication resource for the app using AWS Amplify Auth, powered by Amazon Cognito. Cognito is a powerful user directory service that manages user registration, authentication, account recovery, and more.\nYou will use the AWS Management Console to enable access to Amazon Bedrock and Claude 3 Sonnet foundation model, which the app will use to generate recipes.\nMain content 2.1 set up Amplify Auth\n2.2 Set up Amazon Bedrock Model Access\n"
+},
+{
+	"uri": "//localhost:1313/2-manage-users/2.1-setup-amplify-auth/",
+	"title": "Setup Amplify Auth",
+	"tags": [],
+	"description": "",
+	"content": "The app uses email as the default login mechanism. When the users sign up, they receive a verification email. In this step, you will customize the verification email that is sent to users.\nOn your local machine, navigate to the ai-generated-recipes/amplify/auth/resource.ts file and update it with the following code. Then, save the file. import { defineAuth } from \u0026#34;@aws-amplify/backend\u0026#34;; export const auth = defineAuth({ loginWith: { email: { verificationEmailStyle: \u0026#34;CODE\u0026#34;, verificationEmailSubject: \u0026#34;Welcome to the AI-Powered Recipe Generator!\u0026#34;, verificationEmailBody: (createCode) =\u0026gt; `Use this code to confirm your account: ${createCode()}`, }, }, }); "
+},
+{
+	"uri": "//localhost:1313/2-manage-users/2.2-setup-bedrock/",
+	"title": "Setup Amazon Bedrock Model Access",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Bedrock enables users to request access to a variety of Generative AI models. In this tutorial, you will need access to Claude 3 Sonnet from Anthropic.\nSign in to the AWS Management console in a new browser window, and open the AWS Amazon Bedrock console at https://console.aws.amazon.com/bedrock/. Verify that you are in the N. Virginia us-east-1 region, and choose Get started. In the Foundation models section, choose the Claude model. Scroll down to the Claude models section, and choose the Claude 3 Sonnet tab, and select Request model access. Note: If you already have access to some models, then the button will display Manage model access.\nIn the Base models section, for Claude 3 Sonnet, choose Available to request, and select Request model access. On the Edit model access page, choose Next. On the Review and Submit page, choose Submit. You have configured Amplify for authentication and customized the verification email, and enabled access to Amazon Bedrock and Claude 3 Sonnet.\n"
+},
+{
+	"uri": "//localhost:1313/3-build-serverless-backend/",
+	"title": "Build a Serverless Backend",
+	"tags": [],
+	"description": "",
+	"content": "Overview In this module, you will configure a serverless function using AWS Amplify and AWS Lambda. This function takes an input parameter i.e. ingredients to generate a prompt. It then sends this prompt to Amazon Bedrock via an HTTP POST request to the Claude 3 Sonnet model. The body of the request includes the prompt string within a messages array.\nMain content 3.1 Create a Lambda function for handling requests\n3.2 Add Amazon Bedrock as a data sources\n"
+},
+{
+	"uri": "//localhost:1313/3-build-serverless-backend/3.1-create-a-lambda-function/",
+	"title": "Create a Lambda function for handling requests",
+	"tags": [],
+	"description": "",
+	"content": " On your local machine, navigate to the ai-recipe-generator/amplify/data folder, and create a file named bedrock.js. Then, update the file with the following code: The following code defines a request function that constructs the HTTP request to invoke the Claude 3 Sonnet foundation model in Amazon Bedrock. The response function parses the response and returns the generated recipe. export function request(ctx) { const { ingredients = [] } = ctx.args; // Construct the prompt with the provided ingredients const prompt = `Suggest a recipe idea using these ingredients: ${ingredients.join(\u0026#34;, \u0026#34;)}.`; // Return the request configuration return { resourcePath: `/model/anthropic.claude-3-sonnet-20240229-v1:0/invoke`, method: \u0026#34;POST\u0026#34;, params: { headers: { \u0026#34;Content-Type\u0026#34;: \u0026#34;application/json\u0026#34;, }, body: JSON.stringify({ anthropic_version: \u0026#34;bedrock-2023-05-31\u0026#34;, max_tokens: 1000, messages: [ { role: \u0026#34;user\u0026#34;, content: [ { type: \u0026#34;text\u0026#34;, text: `\\n\\nHuman: ${prompt}\\n\\nAssistant:`, }, ], }, ], }), }, }; } export function response(ctx) { // Parse the response body const parsedBody = JSON.parse(ctx.result.body); // Extract the text content from the response const res = { body: parsedBody.content[0].text, }; // Return the response return res; } "
+},
+{
+	"uri": "//localhost:1313/3-build-serverless-backend/3.2-add-amazon-bedrock/",
+	"title": "Add Amazon Bedrock as a data source",
+	"tags": [],
+	"description": "",
+	"content": " Update the amplify/backend.ts file with the following code. Then, save the file. The code adds an HTTP data source for Amazon Bedrock to your API and grant it permissions to invoke the Claude model. import { defineBackend } from \u0026#34;@aws-amplify/backend\u0026#34;; import { data } from \u0026#34;./data/resource\u0026#34;; import { PolicyStatement } from \u0026#34;aws-cdk-lib/aws-iam\u0026#34;; import { auth } from \u0026#34;./auth/resource\u0026#34;; const backend = defineBackend({ auth, data, }); const bedrockDataSource = backend.data.resources.graphqlApi.addHttpDataSource( \u0026#34;bedrockDS\u0026#34;, \u0026#34;https://bedrock-runtime.us- east-1.amazonaws.com\u0026#34;, { authorizationConfig: { signingRegion: \u0026#34;us-east-1\u0026#34;, signingServiceName: \u0026#34;bedrock\u0026#34;, }, } ); bedrockDataSource.grantPrincipal.addToPrincipalPolicy( new PolicyStatement({ resources: [ \u0026#34;arn:aws:bedrock:us- east-1::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0\u0026#34;, ], actions: [\u0026#34;bedrock:InvokeModel\u0026#34;], }) ); You have defined a Lambda function using Amplify, and added Amazon Bedrock as an HTTP data source.\n"
+},
+{
+	"uri": "//localhost:1313/4-deploy-the-backend-api/",
+	"title": "Deploy the Backend API",
+	"tags": [],
+	"description": "",
+	"content": "Set up Amplify Data In this module, you will configure a custom query that will reference the data source and the resolver you defined the previous model to produce a recipe based on a list of ingredients. This query will use a custom type to structure the response from Amazon Bedrock.\nOn your local machine, navigate to the ai-recipe-generator/amplify/data/resource.ts file, and update it with the following code. Then, save the file. The following code defines the askBedrock query that takes an array of strings called ingredients and returns a BedrockResponse. The .handler(a.handler.custom({ entry: \u0026ldquo;./bedrock.js\u0026rdquo;, dataSource: \u0026ldquo;bedrockDS\u0026rdquo; })) line sets up a custom handler for this query, defined in bedrock.js, using bedrockDS as its data source.\nimport { type ClientSchema, a, defineData } from \u0026#34;@aws-amplify/backend\u0026#34;; const schema = a.schema({ BedrockResponse: a.customType({ body: a.string(), error: a.string(), }), askBedrock: a .query() .arguments({ ingredients: a.string().array() }) .returns(a.ref(\u0026#34;BedrockResponse\u0026#34;)) .authorization((allow) =\u0026gt; [allow.authenticated()]) .handler( a.handler.custom({ entry: \u0026#34;./bedrock.js\u0026#34;, dataSource: \u0026#34;bedrockDS\u0026#34; }) ), }); export type Schema = ClientSchema\u0026lt;typeof schema\u0026gt;; export const data = defineData({ schema, authorizationModes: { defaultAuthorizationMode: \u0026#34;apiKey\u0026#34;, apiKeyAuthorizationMode: { expiresInDays: 30, }, }, }); Open a new terminal window, navigate to your apps project folder (ai-recipe-generator), and run the following command to deploy cloud resources into an isolated development space so you can iterate fast. npx ampx sandbox Once the cloud sandbox has been fully deployed, your terminal will display a confirmation message and the amplify_outputs.json file will be generated and added to your project. You have configured a GraphQL API to define a custom query to connect to Amazon Bedrock and generate recipes based on a list of ingredients. "
+},
+{
+	"uri": "//localhost:1313/5-build-the-frontend/",
+	"title": "Build the frontend",
+	"tags": [],
+	"description": "",
+	"content": "Over view In this module, you will update the website you created in module one to use the Amplify UI component library to scaffold out an entire user authentication flow, allowing users to sign up, sign in, and reset their password and invoke the GraphQL API to use the customer query for generating recipe based on a list of ingredients.\nMain content 5.1 Install the Amplify Libraries\n5.2 Style the App UI\n5.3 Implement the UI\n"
+},
+{
+	"uri": "//localhost:1313/5-build-the-frontend/5.1-install-the-amplify-libraries/",
+	"title": "Install the Amplify Libraries",
+	"tags": [],
+	"description": "",
+	"content": "You will need two Amplify libraries for your project. The main aws-amplify library contains all of the client-side APIs for connecting your app\u0026rsquo;s frontend to your backend, and the @aws-amplify/ui-react library contains framework-specific UI components.\nOpen a new terminal window, navigate to your projects root folder (ai-recipe-generator), and run the following command to install the libraries. npm install aws-amplify @aws-amplify/ui-react "
+},
+{
+	"uri": "//localhost:1313/5-build-the-frontend/5.2-style-the-app-ui/",
+	"title": "Style the App UI",
+	"tags": [],
+	"description": "",
+	"content": " On your local machine, navigate to the ai-recipe-generator/src/index.css file, and update it with the following code to center the App UI. Then, save the file. :root { font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; line-height: 1.5; font-weight: 400; color: rgba(255, 255, 255, 0.87); font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; max-width: 1280px; margin: 0 auto; padding: 2rem; } .card { padding: 2em; } .read-the-docs { color: #888; } .box:nth-child(3n + 1) { grid-column: 1; } .box:nth-child(3n + 2) { grid-column: 2; } .box:nth-child(3n + 3) { grid-column: 3; } Update the src/App.css file with the following code to style the ingredients form. Then, save the file. .app-container { margin: 0 auto; padding: 20px; text-align: center; } .header-container { padding-bottom: 2.5rem; margin: auto; text-align: center; align-items: center; max-width: 48rem; } .main-header { font-size: 2.25rem; font-weight: bold; color: #1a202c; } .main-header .highlight { color: #2563eb; } @media (min-width: 640px) { .main-header { font-size: 3.75rem; } } .description { font-weight: 500; font-size: 1.125rem; max-width: 65ch; color: #1a202c; } .form-container { margin-bottom: 20px; } .search-container { display: flex; flex-direction: column; gap: 10px; align-items: center; } .wide-input { width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; } .search-button { width: 100%; /* Make the button full width */ max-width: 300px; /* Set a maximum width for the button */ padding: 10px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; } .search-button:hover { background-color: #0056b3; } .result-container { margin-top: 20px; transition: height 0.3s ease-out; overflow: hidden; } .loader-container { display: flex; flex-direction: column; align-items: center; gap: 10px; } .result { background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; white-space: pre-wrap; word-wrap: break-word; color: black; font-weight: bold; text-align: left; /* Align text to the left */ } "
+},
+{
+	"uri": "//localhost:1313/5-build-the-frontend/5.3-implement-the-ui/",
+	"title": "Implement the  UI",
+	"tags": [],
+	"description": "",
+	"content": " On your local machine, navigate to the ai-recipe-generator/src/main.tsx file, and update it with the following code. Then, save the file. import React from \u0026#34;react\u0026#34;; import ReactDOM from \u0026#34;react-dom/client\u0026#34;; import App from \u0026#34;./App.jsx\u0026#34;; import \u0026#34;./index.css\u0026#34;; import { Authenticator } from \u0026#34;@aws-amplify/ui-react\u0026#34;; ReactDOM.createRoot(document.getElementById(\u0026#34;root\u0026#34;)!).render( \u0026lt;React.StrictMode\u0026gt; \u0026lt;Authenticator\u0026gt; \u0026lt;App /\u0026gt; \u0026lt;/Authenticator\u0026gt; \u0026lt;/React.StrictMode\u0026gt; ); The code will use the Amplify Authenticator component to scaffold out an entire user authentication flow allowing users to sign up, sign in, reset their password, and confirm sign-in for multifactor authentication (MFA). Open the ai-recipe-generator/src/App.tsx file, and update it with the following code. Then, save the file. The code starts by configuring the Amplify library with the client configuration file (amplify_outputs.json). It then generates a data client using the generateClient() function. The app presents a form to users for submitting a list of ingredients. Once submitted, it will use the data client to pass the list to the askBedrock query and retrieve the generated recipe then display it to the user.\nimport { FormEvent, useState } from \u0026#34;react\u0026#34;; import { Loader, Placeholder } from \u0026#34;@aws-amplify/ui-react\u0026#34;; import \u0026#34;./App.css\u0026#34;; import { Amplify } from \u0026#34;aws-amplify\u0026#34;; import { Schema } from \u0026#34;../amplify/data/resource\u0026#34;; import { generateClient } from \u0026#34;aws-amplify/data\u0026#34;; import outputs from \u0026#34;../amplify_outputs.json\u0026#34;; import \u0026#34;@aws-amplify/ui-react/styles.css\u0026#34;; Amplify.configure(outputs); const amplifyClient = generateClient\u0026lt;Schema\u0026gt;({ authMode: \u0026#34;userPool\u0026#34;, }); function App() { const [result, setResult] = useState\u0026lt;string\u0026gt;(\u0026#34;\u0026#34;); const [loading, setLoading] = useState(false); const onSubmit = async (event: FormEvent\u0026lt;HTMLFormElement\u0026gt;) =\u0026gt; { event.preventDefault(); setLoading(true); try { const formData = new FormData(event.currentTarget); const { data, errors } = await amplifyClient.queries.askBedrock({ ingredients: [formData.get(\u0026#34;ingredients\u0026#34;)?.toString() || \u0026#34;\u0026#34;], }); if (!errors) { setResult(data?.body || \u0026#34;No data returned\u0026#34;); } else { console.log(errors); } } catch (e) { alert(`An error occurred: ${e}`); } finally { setLoading(false); } }; return ( \u0026lt;div className=\u0026#34;app-container\u0026#34;\u0026gt; \u0026lt;div className=\u0026#34;header-container\u0026#34;\u0026gt; \u0026lt;h1 className=\u0026#34;main-header\u0026#34;\u0026gt; Meet Your Personal \u0026lt;br /\u0026gt; \u0026lt;span className=\u0026#34;highlight\u0026#34;\u0026gt;Recipe AI\u0026lt;/span\u0026gt; \u0026lt;/h1\u0026gt; \u0026lt;p className=\u0026#34;description\u0026#34;\u0026gt; Simply type a few ingredients using the format ingredient1, ingredient2, etc., and Recipe AI will generate an all-new recipe on demand... \u0026lt;/p\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;form onSubmit={onSubmit} className=\u0026#34;form-container\u0026#34;\u0026gt; \u0026lt;div className=\u0026#34;search-container\u0026#34;\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; className=\u0026#34;wide-input\u0026#34; id=\u0026#34;ingredients\u0026#34; name=\u0026#34;ingredients\u0026#34; placeholder=\u0026#34;Ingredient1, Ingredient2, Ingredient3,...etc\u0026#34; /\u0026gt; \u0026lt;button type=\u0026#34;submit\u0026#34; className=\u0026#34;search-button\u0026#34;\u0026gt; Generate \u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/form\u0026gt; \u0026lt;div className=\u0026#34;result-container\u0026#34;\u0026gt; {loading ? ( \u0026lt;div className=\u0026#34;loader-container\u0026#34;\u0026gt; \u0026lt;p\u0026gt;Loading...\u0026lt;/p\u0026gt; \u0026lt;Loader size=\u0026#34;large\u0026#34; /\u0026gt; \u0026lt;Placeholder size=\u0026#34;large\u0026#34; /\u0026gt; \u0026lt;Placeholder size=\u0026#34;large\u0026#34; /\u0026gt; \u0026lt;Placeholder size=\u0026#34;large\u0026#34; /\u0026gt; \u0026lt;/div\u0026gt; ) : ( result \u0026amp;\u0026amp; \u0026lt;p className=\u0026#34;result\u0026#34;\u0026gt;{result}\u0026lt;/p\u0026gt; )} \u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; ); } export default App; Open a new terminal window, navigate to your projects root directory (ai-recipe-generator), and run the following command to launch the app: npm run dev Select the Local host link to open the Vite + React application. Choose the Create Account tab, and use the authentication flow to create a new user by entering your email address and a password. Then, choose Create Account.\nYou will get a verification code sent to your email. Enter the verification code to log in to the app. When signed in, you can start inputting ingredients and generating recipes. In the open terminal window, run the following command to push the changes to GitHub:\ngit add . git commit -m \u0026#39;connect to bedrock\u0026#39; git push origin main Sign in to the AWS Management console in a new browser window, and open the AWS Amplify console at https://console.aws.amazon.com/amplify/apps.\nAWS Amplify automatically builds your source code and deployed your app at https://...amplifyapp.com, and on every git push your deployment instance will update. Select the Visit deployed URL button to see your web app up and running live.\nYou have now connected your app to the Amplify backend and built a frontend to generate a recipe based on a list of ingredients submitted by the user.\n"
+},
+{
+	"uri": "//localhost:1313/6-clean-up-resources/",
+	"title": "Clean Up Resources",
+	"tags": [],
+	"description": "",
+	"content": " In the Amplify console, in the left-hand navigation for the ai-recipe-generator app, choose App settings, and select General settings. In the General settings section, choose Delete app. "
+},
+{
+	"uri": "//localhost:1313/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

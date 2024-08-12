@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploy your app on Amplify on </title>
+    <link>//localhost:1313/1-host-static-website/1.4-deploy-amplify/</link>
+    <description>Recent content in Deploy your app on Amplify on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/1-host-static-website/1.4-deploy-amplify/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
