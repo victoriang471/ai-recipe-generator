@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:victoriang471/ai-recipe-generator.git
+	branch = main
