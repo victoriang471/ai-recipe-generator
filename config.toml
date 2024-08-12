@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Build a Serverless Web Application using Generative AI"
+title = ""
 weight = 1
 languageName = "English"
 
