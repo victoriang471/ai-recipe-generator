@@ -18,7 +18,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Create a new AWS account."
+title = "Build a Serverless Web Application using Generative AI"
 weight = 1
 languageName = "English"
 
