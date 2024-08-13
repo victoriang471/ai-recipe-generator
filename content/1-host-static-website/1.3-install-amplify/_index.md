@@ -16,4 +16,4 @@ git add .
 git commit -m 'installing amplify'
 git push origin main
 ```
-![Install Amplify Window](/images/p.1/1.6.png?featherlight=false&width=90pc)
+![Install Amplify Window](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.1/1.6.png?raw=true?featherlight=false&width=90pc)

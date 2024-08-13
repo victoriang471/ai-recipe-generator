@@ -13,7 +13,7 @@ For Repository name, enter ``ai-recipe-generator``, and choose the Public radio 
 Then select, **Create a new repository**.
 
 Open a new terminal window, navigate to your projects root folder (ai-recipe-generator), and run the following commands to initialize a git and push of the application to the new GitHub repo:
-![Github New Repo](/images/p.1/1.4.png?featherlight=false&width=90pc)
+![Github New Repo](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.1/1.4.png?raw=true?featherlight=false&width=90pc)
 
 {{% notice info %}}
 Note: Replace the SSH GitHub URL in the command with your GitHub URL.  
