@@ -50,7 +50,3 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
-
-canonifyURLs = true 
-[params]
-enableLightbox = false
