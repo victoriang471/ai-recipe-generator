@@ -52,3 +52,5 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
 
 canonifyURLs = true 
+[params]
+enableLightbox = false
