@@ -43,7 +43,7 @@ pre : " <b> 5.2 </b> "
   grid-column: 3;
 }
 ```
-![style the ui](/images/p.5/5.2.png?featherlight=false&width=90pc)
+![style the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.2.png?raw=true?featherlight=false&width=90pc)
 
 2. **Update** the *src/App.css* file with the following code to style the ingredients form. Then, **save** the file.
 ```
