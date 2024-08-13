@@ -9,7 +9,7 @@ chapter : false
 
 In this tutorial, you will learn how to use **AWS Amplify** to build a serverless web application powered by Generative AI using **Amazon Bedrock** and the **Claude 3 Sonnet** foundation model. Users can enter a list of ingredients, and the application will generate delicious recipes based on the input ingredients. The application includes an HTML-based user interface for ingredient submission and a backend web app to request AI-generated recipes.
 
-![Application Architecture](/images/p.0/0.1.png?featherlight=false&width=90pc)
+![Application Architecture](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.0/0.1.png?raw=true?featherlight=false&width=90pc)
 
 
 #### Main Content
