@@ -26,4 +26,4 @@ git remote add origin git@github.com:<your-username>/ai-recipe-generator.git
 git branch -M main
 git push -u origin main
 ```
-![Git Push Command](/images/p.1/1.5.png?featherlight=false&width=90pc)
+![Git Push Command](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.1/1.5.png?raw=true?featherlight=false&width=90pc)
