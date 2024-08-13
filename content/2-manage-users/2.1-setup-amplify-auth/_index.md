@@ -22,4 +22,4 @@ export const auth = defineAuth({
   },
 });
 ```
-![Resource Config](/images/p.2/2.1.png?featherlight=false&width=90pc)
+![Resource Config](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.2/2.1.png?raw=true?featherlight=false&width=90pc)

@@ -42,7 +42,7 @@ export const data = defineData({
   },
 });
 ```
-![resource ts config](/images/p.4/4.1.png?featherlight=false&width=90pc)
+![resource ts config](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.4/4.1.png?raw=true?featherlight=false&width=90pc)
 
 2. Open a new terminal window, navigate to your apps project folder (*ai-recipe-generator*), and run the following command to deploy cloud resources into an isolated development space so you can iterate fast.
 ```
@@ -50,6 +50,6 @@ npx ampx sandbox
 ```
 
 3. Once the cloud sandbox has been fully deployed, your terminal will display a confirmation message and the *amplify_outputs.json* file will be generated and added to your project. 
-![npx sandbox](/images/p.4/4.2.png?featherlight=false&width=90pc)
+![npx sandbox](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.4/4.2.png?raw=true?featherlight=false&width=90pc)
 You have configured a GraphQL API to define a custom query to connect to Amazon Bedrock and generate recipes based on a list of ingredients. 
 

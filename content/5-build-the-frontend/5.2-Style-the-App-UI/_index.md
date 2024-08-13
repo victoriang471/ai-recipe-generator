@@ -149,4 +149,4 @@ pre : " <b> 5.2 </b> "
   text-align: left; /* Align text to the left */
 }
 ```
-![style the ui](/images/p.5/5.3.png?featherlight=false&width=90pc)
+![style the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.3.png?raw=true?featherlight=false&width=90pc)

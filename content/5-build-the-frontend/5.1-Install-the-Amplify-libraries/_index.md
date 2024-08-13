@@ -10,6 +10,6 @@ You will need two Amplify libraries for your project. The main aws-amplify libra
 ```
 npm install aws-amplify @aws-amplify/ui-react
 ```
-![ui install](/images/p.5/5.1.png?featherlight=false&width=90pc)
+![ui install](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.1.png?raw=true?featherlight=false&width=90pc)
 
 

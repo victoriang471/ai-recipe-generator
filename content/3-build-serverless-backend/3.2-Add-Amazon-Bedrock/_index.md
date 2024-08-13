@@ -41,4 +41,4 @@ bedrockDataSource.grantPrincipal.addToPrincipalPolicy(
 ```
 You have defined a Lambda function using Amplify, and added Amazon Bedrock as an HTTP data source.
 
-![backend ts config](/images/p.3/3.3.png?featherlight=false&width=90pc)
+![backend ts config](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.3/3.3.png?raw=true?featherlight=false&width=90pc)

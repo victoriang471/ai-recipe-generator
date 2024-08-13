@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 );
 ```
 The code will use the Amplify Authenticator component to scaffold out an entire user authentication flow allowing users to sign up, sign in, reset their password, and confirm sign-in for multifactor authentication (MFA).
-![implement the ui](/images/p.5/5.4.png?featherlight=false&width=90pc)
+![implement the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.4.png?raw=true?featherlight=false&width=90pc)
 
 2. Open the *ai-recipe-generator/src/App.tsx* file, and update it with the following code. Then, **save** the file.
 
@@ -126,13 +126,13 @@ export default App;
 npm run dev
 ```
 4. **Select** the **Local host link** to open the Vite + React application.
-![implement the ui](/images/p.5/5.6a.png?featherlight=false&width=90pc)
+![implement the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.6a.png?raw=true?featherlight=false&width=90pc)
 
 5. Choose the **Create Account tab**, and use the authentication flow to create a new user by entering your *email address* and a *password*. Then, choose **Create Account**.
 6. You will get a verification code sent to your email. Enter the **verification code** to log in to the app.
-![implement the ui](/images/p.5/5.7.png?featherlight=false&width=90pc)
+![implement the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.7.png?raw=true?featherlight=false&width=90pc)
 7. When signed in, you can start **inputting ingredients** and **generating recipes**. 
-![implement the ui](/images/p.5/5.8.png?featherlight=false&width=90pc)
+![implement the ui](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.5/5.8.png?raw=true?featherlight=false&width=90pc)
 8.  In the open terminal window, run the following command to push the changes to GitHub: 
 ```
 git add .

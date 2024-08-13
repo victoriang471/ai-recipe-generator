@@ -53,4 +53,4 @@ export function request(ctx) {
     return res;
   }
 ```
-![Bedrock js config](/images/p.3/3.1.png?featherlight=false&width=90pc)
+![Bedrock js config](https://github.com/victoriang471/ai-recipe-generator/blob/main/static/images/p.3/3.1.png?raw=true?featherlight=false&width=90pc)
